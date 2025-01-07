@@ -51,7 +51,12 @@
     formContainer.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
     formContainer.style.zIndex = 1001;
     formContainer.innerHTML = `
-      <form id="signinForm" style=" margin-left:55px;">
+        <form id="signinForm" 
+        style=" margin-left:55px; 
+            transform: translateY(-50%);
+                backdrop-filter: blur(8px);
+                    z-index: 2;
+ background-color: rgba(255, 255, 255, 0.5);">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" autocomplete="name" placeholder="Enter your name here" required style="display:block; margin:10px; padding:5px;">
         <label for="password">Password</label>
