@@ -15,7 +15,7 @@
     document.body.appendChild(overlay);
   
     const formContainer = document.createElement('div');
-    formContainer.style.position = 'fixed';
+    formContainer.style.position = 'fixed'; 
     formContainer.style.top = '0.6%';
     formContainer.style.left = '33%';
     formContainer.style.height = '36rem';
@@ -118,7 +118,7 @@ removeCartBtn.forEach(element=>{
 const browseByCat=document.querySelectorAll('.product');
 browseByCat.forEach(element=>{
 element.addEventListener("click",()=>{
-  location.href="/browseByCategoryProduct.html";
+  location.href="browseByCategoryProduct.html";
 })
 })
 
@@ -131,7 +131,7 @@ randomProduct.forEach(element=>{
       event.stopPropagation();
     }
     else{
-      location.href="/browseByCategoryProduct.html";
+      location.href="browseByCategoryProduct.html";
     }
   })
 })
