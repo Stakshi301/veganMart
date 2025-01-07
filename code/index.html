@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body class="light-theme">
+  
+  <section class="main_container">
+    
+      <nav class="navbar">
+    <section class="logo_section">
+    <img class="logo_image" src="/asserts/VeganMart_Logo.png" alt="logo">
+    <span class="vegan_text">Vegan</span>
+    <span class="mart_text">Mart</span>
+  </section>
+  <div class="line"></div>
+  <div class="search_bar">
+  <i class="ri-search-line"></i>
+    <input class="search_field" id="search_area" type="text" placeholder="Search Vegan...">
+    <button class="search_button"> <i class="ri-search-line"></i></button>
+  </div>
+    <div class="signIn_cart_button">
+      <!-- <button id="DarkTheme_button" class="side_button "><i class="ri-moon-line"></i></button>
+      <button id="LightTheme_button" class="side_button hide"><i class="ri-moon-line"></i></button> -->
+    <button id="SignIn_button" class="side_button"><i class="ri-account-circle-line"></i> <br> SignIn</button>
+    <button id="cart_button" class="side_button"><i class="ri-shopping-cart-2-line"></i> <sup></sup> <br> Cart </button>
+  </div>
+  </nav>
+
+ 
+   
+
+  <!-- SLOGAN SECTION -->
+  <section class="slogan">
+    <div class="marque">
+      <p class="slogan_para">100% Vegan Product!</p>
+      <p class="slogan_para">Pehle Istemaal Karen Fir Vishwas Karen!</p>
+      <p class="slogan_para">100% Vegan Products!</p>
+      <p class="slogan_para">Shop Now for Healthy Living!</p>
+      <p class="slogan_para">100% Vegan Product!</p>
+      <p class="slogan_para">Free Shipping on Orders Over $50!</p>
+    </div>
+  </section>
+
+
+   <!-- OFFER POSTER AND SPECIALITIESS  -->
+  <section class="poster_container">
+    <div class="poster">
+      <img src="/asserts/poster-removebg-preview.png" alt="">
+        <span>Go Vegan ,</span> 
+        <p>Kindness Tastes Better.</p>
+    </div>
+    <div class="offer"></div>
+    <div class="specialities"></div>
+  </section>
+
+
+  <!-- FILTER AND PRODUCTS BY CATEGORY -->
+<section class="products_card_container">
+<div class="product_card_heading">
+  <p class="browser_text">Browse</p>
+  <p class="by_text">by</p>
+  <p class="category_text">category</p>
+</div>
+
+<div class="categorised_products_card">
+
+  <a class="redirect" href="/code/pages/browseByCategoryProduct.html#chew">
+  <div class="product" >
+  <img src="/asserts/chew3.jpg" alt="">
+  <h4>Vegan Chew</h4>
+</div>
+</a>
+
+<a class="redirect" href="/code/pages/browseByCategoryProduct.html#dry_fruits">
+  <div class="product">  
+      <img src="/asserts/almonds5.jpg" alt="">
+        <h4>Dry-fruits</h4>
+    </div>
+</a>
+
+<a  class="redirect" href="/code/pages/browseByCategoryProduct.html#choclates">
+  <div class="product">
+    <img src="/asserts/choclate2.jpg" alt="">
+      <h4>choclates</h4>
+  </div>
+</a>
+
+  <a class="redirect" href="/code/pages/browseByCategoryProduct.html#Pantry">
+  <div class="product">
+    <img src="/asserts/pantry.jpg" alt="">
+      <h4>Pantry Essentials</h4>
+  </div>
+</a>
+
+  <a class="redirect" href="/code/pages/browseByCategoryProduct.html#Drinks">
+  <div class="product">
+    <img src="/asserts/drinks4.jpg" alt="">
+      <h4>Drinks</h4>
+  </div>
+</a>
+
+  <a class="redirect" href="/code/pages/browseByCategoryProduct.html#Dairy">
+  <div class="product">
+    <img src="/asserts/cheese1.jpg" alt="">
+      <h4>Dairy products</h4>
+  </div>
+</a>
+  
+</div>  
+</section>
+
+
+   <div id="cart_display" style="display: none; border: 1px solid #ccc; padding: 10px;">
+        <h2>Cart Items</h2>
+        <ul id="cart_list"></ul>
+      </div>
+<!-- REANDOM PRODUCTS CARD -->
+<section class="random_products_card_parent">
+  <h1>Most Viewed Products</h1>
+  <section class="random_products_card_child">
+
+    <div class="random_product">
+      <img src="/asserts/snack3.jpg" alt="">
+  <div class="random_product_content">
+    <h4>Beans Chips  </h4>
+  <p>100% vegan  </p>
+  <div class="price_cartBtn">
+    <p>$ 5</p>
+    <div class="add_remove">
+      <button class="RemoveCartBtn">-</button>
+      <button class="AddCartBtn">+</button>
+    </div>
+    </div>
+  </div>
+  </div>
+
+    <div class="random_product">  
+        <img src="/asserts/chew4.jpg" alt="">
+        <div class="random_product_content">
+          <h4>Tree Gum</h4>
+        <p>100% vegan  </p>
+         <div class="price_cartBtn">
+    <p>$ 5</p>
+    <div class="add_remove">
+      <button class="RemoveCartBtn">-</button>
+      <button class="AddCartBtn">+</button>
+    </div>
+    </div>
+        </div>
+      </div>
+
+
+    <div class="random_product">
+      <img src="/asserts/veggies2.jpg" alt="">
+      <div class="random_product_content">
+        <h4>Sweet Pepper</h4>
+      <p>100% vegan  </p>
+     <div class="price_cartBtn">
+    <p>$ 5</p>
+    <div class="add_remove">
+      <button class="RemoveCartBtn">-</button>
+      <button class="AddCartBtn">+</button>
+    </div>
+  </div>
+      </div>
+    </div>
+
+    <div class="random_product">
+      <img src="/asserts/choclate3.jpg" alt="">
+      <div class="random_product_content">
+        <h4>Coconut Original</h4>
+      <p>100% vegan  </p>
+     <div class="price_cartBtn">
+    <p>$ 5</p>
+ <div class="add_remove">
+      <button class="RemoveCartBtn">-</button>
+      <button class="AddCartBtn">+</button>
+    </div>
+  </div>
+      </div>
+    </div>
+
+    <div class="random_product">
+      <img src="/asserts/drinks4.jpg" alt="">
+      <div class="random_product_content">
+        <h4>Cherry Vanilla</h4>
+      <p>100% vegan  </p>
+       <div class="price_cartBtn">
+    <p>$ 5</p>
+ <div class="add_remove">
+      <button class="RemoveCartBtn">-</button>
+      <button class="AddCartBtn">+</button>
+    </div>  </div>
+      </div>
+    </div>
+
+    <div class="random_product">
+      <img src="/asserts/snack.webp" alt="">
+      <div class="random_product_content">
+        <h4>Vegan Jerky</h4>
+      <p>100% vegan  </p>
+     <div class="price_cartBtn">
+    <p>$ 5</p>
+ <div class="add_remove">
+      <button class="RemoveCartBtn">-</button>
+      <button class="AddCartBtn">+</button>
+    </div>  </div>
+      </div>
+    </div>
+
+    <div class="random_product">
+      <img src="/asserts/almonds6.jpg" alt="">
+      <div class="random_product_content">
+        <h4>Dried Mango</h4>
+      <p>100% vegan  </p>
+     <div class="price_cartBtn">
+    <p>$ 5</p>
+ <div class="add_remove">
+      <button class="RemoveCartBtn">-</button>
+      <button class="AddCartBtn">+</button>
+    </div>  </div>
+      </div>
+    </div>
+
+    <div class="random_product">
+      <img src="/asserts/cheese1.jpg" alt="">
+      <div class="random_product_content">
+        <h4>Nacho Dip</h4>
+      <p>100% vegan  </p>
+     <div class="price_cartBtn">
+    <p>$ 5</p>
+ <div class="add_remove">
+      <button class="RemoveCartBtn">-</button>
+      <button class="AddCartBtn">+</button>
+    </div>  </div>
+      </div>
+    </div>
+    <div class="random_product">
+      <img src="/asserts/milk2.jpg" alt="">
+      <div class="random_product_content">
+        <h4>Protein Powder</h4>
+      <p>100% vegan  </p>
+       <div class="price_cartBtn">
+    <p>$ 5</p>
+ <div class="add_remove">
+      <button class="RemoveCartBtn">-</button>
+      <button class="AddCartBtn">+</button>
+    </div>  </div>
+      </div>
+    </div>
+    <div class="random_product">
+      <img src="/asserts/pantry2.jpg" alt="">
+      <div class="random_product_content">
+        <h4>Mozarella</h4>
+      <p>100% vegan  </p>
+       <div class="price_cartBtn">
+    <p>$ 5</p>
+ <div class="add_remove">
+      <button class="RemoveCartBtn">-</button>
+      <button class="AddCartBtn">+</button>
+    </div>  </div>
+      </div>
+    </div>
+    <div class="random_product">
+      <img src="/asserts/milk4.jpg" alt="">
+      <div class="random_product_content">
+        <h4>OAT Milk</h4>
+      <p>100% vegan  </p>
+       <div class="price_cartBtn">
+    <p>$ 5</p>
+ <div class="add_remove">
+      <button class="RemoveCartBtn">-</button>
+      <button class="AddCartBtn">+</button>
+    </div>  </div>
+      </div>
+    </div>
+
+    <div class="random_product">
+      <img src="/asserts/almonds5.jpg" alt="">
+      <div class="random_product_content">
+        <h4>Watermelon Jerky</h4>
+      <p class="random_product_content_para">100% vegan  </p>
+      <div class="price_cartBtn">
+        <p>$ 5</p>
+     <div class="add_remove">
+      <button class="RemoveCartBtn">-</button>
+      <button class="AddCartBtn">+</button>
+    </div>   
+     </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+<!-- WHY GO VEGAN -->
+ <section class="vegan_benefits_container">
+  <div class="vegan_benefits_childContainer">
+    <div class="whyVegan_heading_container">
+      <h1>why go vegan section </h1>
+    <p>There are so many benefits to a vegan diet. We know it can seem daunting if you’ve spent your life relying on animal-derived products. We understand the questions that might be running through your head. Will I have to eat bland food forever? Will I get all the nutrients I need? Will it cost me lots of money? Why go vegan?! Well, lucky for you, we’re here to help.</p>
+    </div>
+  <div class="why_vegan_para1">
+    <img src="/asserts/animal poster4.jpeg" alt=""> 
+    <h3>Help Stop Animal Cruelty</h3>
+    <p class="whyVegan_para1">We wholeheartedly believe that this must change. Let’s look at some of the stats. Another of the main reasons to go vegan is to show care and respect for the wonderful creatures we live alongside. We all know that a diet laden with animal products means the violent killing of animals. And despite all the amazing vegan alternatives now available, this continues to be the norm.</p>
+  </div>
+
+   <!-- <img src="/asserts/animal.jpg" alt=""> -->
+<div class="why_vegan_para2">
+  <img src="/asserts/vegan product5.jpg" alt="">
+  <h3>Eating Green for Protein</h3>
+  <p class="whyVegan_para2">Vegetables are often associated with vitamins, minerals, and fiber, but they can also provide a good source of protein, especially for those following plant-based diets. While vegetables may not be as protein-dense as meat or legumes, they still contain notable amounts of protein. For instance, vegetables like spinach, broccoli, peas, and Brussels sprouts are rich in protein and can contribute significantly to daily intake.</p>
+</div>
+
+   </div>
+</section>
+
+
+<!-- CUSTOMERS REVIEWS -->
+<section class="customer_reviews_parent">
+  <h2>Customer's Reviews</h2> 
+
+  <section class="customer_reviews_child">
+
+  <div class="review_card">
+    <div class="product_image">
+  <img src="/asserts/pantry1.jpg" alt="">
+      <h4>Chia Seeds</h4>
+    </div>
+<div class="description">
+  <p>⭐⭐⭐⭐⭐</p>
+  <p>Love the quality. Highly recomendable</p>
+</div>
+  </div>
+  
+  <div class="review_card">
+    <div class="product_image">
+  <img src="/asserts/almonds2.jpg" alt="">
+      <h4>Salted Caramel</h4>
+    </div>
+<div class="description">
+  <p>⭐⭐⭐⭐⭐</p>
+  <p>"Absolutely love this product! It exceeded my expectations in terms of quality and performance."</p>
+</div>
+  </div>
+
+  <div class="review_card">
+    <div class="product_image">
+  <img src="/asserts/chew1.jpg" alt="">
+      <h4>Glee Gum</h4>
+    </div>
+<div class="description">
+  <p>⭐⭐⭐⭐⭐</p>
+  <p>"The quality is fantastic, and it works as advertised. Highly recommend it!"</p>
+</div>
+  </div>
+  
+  <div class="review_card">
+    <div class="product_image">
+      <img src="/asserts/drinks6.jpg" alt="">
+      <h4>Protien Shake</h4>
+    </div>
+<div class="description">
+  <p>⭐⭐⭐⭐⭐</p>
+  <p>"A game-changer for my daily routine! Worth every penny."</p>
+</div>
+  </div>
+
+  <div class="review_card">
+    <div class="product_image">
+      <img src="/asserts/choclate3.jpg" alt="">
+      <h4>Choclate</h4>
+    </div>
+<div class="description">
+  <p>⭐⭐⭐⭐⭐</p>
+  <p>"This product proves that vegan food can be both delicious and nutritious."</p>
+</div>
+  </div>
+  
+  <div class="review_card">
+    <div class="product_image">
+  <img src="/asserts/cheese3.jpg" alt="">
+      <h4>Cream Cheese</h4>
+    </div>
+<div class="description">
+  <p>⭐⭐⭐⭐⭐</p>
+  <p>"Love the fact that it's plant-based and packed with flavor. A total win!"</p>
+</div>
+  </div>
+
+  <div class="review_card">
+    <div class="product_image">
+  <img src="/asserts/milk1.jpg" alt="">
+      <h4>Soya Milk</h4>
+    </div>
+<div class="description">
+  <p>⭐⭐⭐⭐⭐</p>
+  <p>"The taste is rich and natural, without any weird aftertaste. My new favorite!"</p>
+</div>
+  </div>
+  
+  <div class="review_card">
+    <div class="product_image">
+  <img src="/asserts/snack1.jpg" alt="">
+      <h4>Crackers</h4>
+    </div>
+<div class="description">
+  <p>⭐⭐⭐⭐⭐</p>
+  <p>"Finally, a vegan product that doesn’t compromise on flavor. Highly recommend!"</p>
+</div>
+  </div>
+
+</section>
+
+  </section>
+
+
+  <!-- FOOTER  SECTION  -->
+  <footer>
+    <div class="footer">
+      <div class="left">
+        <h4>Useful Links</h4>
+
+        <div class="left1">
+          <div class="footer-section">
+            <a href="#">Faq</a>
+            <a href="#">Mobile</a>
+            <a href="#">Contract</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div>
+          <h4>Categories <span>see all</span></h4>
+        </div>
+
+        <div class="right1">
+          <div class="footer-section">
+            <a href="#">Vegetables</a>
+            <a href="#">Fruits</a>
+            <a href="#">Beans</a>
+            <a href="#">Dry Fruits</a>
+          </div>
+
+          <div class="footer-section">
+            <a href="#">Cheese</a>
+            <a href="#">Milk</a>
+            <a href="#">Paneer</a>
+            <a href="#">Mayonees</a>
+          </div>
+
+          <div class="footer-section">
+            <a href="#">Salted Caramel </a>
+            <a href="#">Gummies</a>
+            <a href="#">Crackers</a>
+            <a href="#">Nachos</a>
+          </div>
+
+          <div class="footer-section">
+            <a href="#">Protien drinks </a>
+            <a href="#">Soya Milk</a>
+            <a href="#">Choclates</a>
+          </div>
+          
+          <div class="footer-section">
+            <a href="#">Munchies </a>
+            <a href="#">Snacks</a>
+            <a href="#">Chia seeds</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="last">
+      <div class="lower">
+        <div class="lower-left">
+          <p>© VeganMart Commerce Private Limited, 2016-2025</p>
+        </div>
+
+        <div class="middle">
+          <p>Download App</p>
+          <img src="https://blinkit.com/d61019073b700ca49d22.png" />
+          <img src="https://blinkit.com/8ed033800ea38f24c4f0.png" />
+        </div>
+
+        <div class="lower-right">
+          <i class="ri-facebook-circle-fill"></i>
+          <i class="ri-twitter-fill"></i>
+          <i class="ri-instagram-fill"></i>
+          <i class="ri-linkedin-box-fill"></i>
+          <i class="ri-at-fill"></i>
+        </div>
+      </div>
+      <p class="last-para">
+        VeganMart is owned & managed by "Vegan Commerce Private Limited" and
+        is not related, linked or interconnected in whatsoever manner or
+        nature, to “GROFFR.COM” which is a real estate services business
+        operated by “Redstone Consultancy Services Private Limited”.
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
