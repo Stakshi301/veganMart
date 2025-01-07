@@ -1,2 +1,0 @@
-# veganMart
-Vegan products.

@@ -89,9 +89,9 @@
 
 // ADD TO CART CLICK EVENT 
 const goToCart=document.getElementById('cart_button');
-goToCart.addEventListener("click",()=>{
-  location.href="/code/pages/cart.html"
-})
+// goToCart.addEventListener("click",()=>{
+//   location.href="/pages/cart.html"
+// })
 
 
 let cartQuantity=0;
@@ -119,7 +119,7 @@ removeCartBtn.forEach(element=>{
 const browseByCat=document.querySelectorAll('.product');
 browseByCat.forEach(element=>{
 element.addEventListener("click",()=>{
-  location.href="/code/pages/browseByCategoryProduct.html";
+  location.href="/browseByCategoryProduct.html";
 })
 })
 
@@ -132,7 +132,7 @@ randomProduct.forEach(element=>{
       event.stopPropagation();
     }
     else{
-      location.href="/code/pages/browseByCategoryProduct.html";
+      location.href="/browseByCategoryProduct.html";
     }
   })
 })
