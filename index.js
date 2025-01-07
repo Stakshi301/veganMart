@@ -1,27 +1,3 @@
-// // DARK LIGHT THEME
-// const darkTheme=document.getElementById('DarkTheme_button');
-// const lightTheme=document.getElementById('LightTheme_button');
-// const buttons=document.querySelectorAll('.side_button')
-
-// darkTheme.addEventListener("click",()=>{
-// document.body.classList.remove("light-theme");
-// document.body.classList.add("dark-theme");
-// lightTheme.classList.remove("hide");
-// darkTheme.classList.add("hide");
-
-// buttons.forEach(element=>{
-//   buttons.classList.add("dark-theme");
-
-// })
-// })
-
-
-// lightTheme.addEventListener("click",()=>{
-//   document.body.classList.remove("dark-theme");
-//   document.body.classList.add("light-theme");
-//   darkTheme.classList.remove("hide");
-//   lightTheme.classList.add("hide");
-//   })
 
 
   // SIGNUP FORM CLICK EVENT
@@ -40,34 +16,52 @@
   
     const formContainer = document.createElement('div');
     formContainer.style.position = 'fixed';
-    formContainer.style.top = '24%';
-    formContainer.style.left = '37%';
-    formContainer.style.height = '20rem';
-    formContainer.style.width = '22rem';
-    formContainer.style.backgroundColor = 'white';
-    formContainer.style.padding = '30px 20px';
+    formContainer.style.top = '0.6%';
+    formContainer.style.left = '33%';
+    formContainer.style.height = '36rem';
+    formContainer.style.width = '26rem';
+    // formContainer.style.backgroundColor = 'white';
+    formContainer.style.padding = '11px 5px';
     formContainer.style.border = '1px solid #ccc';
     formContainer.style.borderRadius = '5px';
     formContainer.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
     formContainer.style.zIndex = 1001;
-    formContainer.innerHTML = `
-        <form id="signinForm" 
-        style=" margin-left:55px; 
-            transform: translateY(-50%);
-                backdrop-filter: blur(8px);
-                    z-index: 2;
- background-color: rgba(255, 255, 255, 0.5);">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" autocomplete="name" placeholder="Enter your name here" required style="display:block; margin:10px; padding:5px;">
-        <label for="password">Password</label>
-        <input type="password" name="password" minlength="8" id="password" placeholder="Enter your password here" required style="display:block; margin:10px; padding:5px;">
-        <label for="number">Phone Number</label>
-        <input type="number" name="number" id="number"   oninput="if(this.value.length > 10) this.value = this.value.slice(0, 10);" 
- placeholder="Enter your number here" required maxlength="10" style="display:block; margin:10px; padding:5px;">
-        <button type="submit" id="signInComplete" style="margin:5px 5px 5px 25px; border-radius:6px; border:none; height:2rem; width:4rem; padding:5px; background-color:#03C988; cursor:pointer">SignIn</button>
-        <button type="button" id="GoBack" style="margin:5px; width:4rem; border-radius:6px; border:none; height:2rem; padding:5px; background-color:#F6B17A; cursor:pointer">GoBack</button>
-      </form>
-    `;
+   
+
+formContainer.innerHTML = `
+  <form id="signinForm" style="max-width: 400px; margin: auto; padding: 20px; background-color: rgba(255, 255, 255, 0.6); border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); backdrop-filter: blur(10px);">
+    <h2 style="text-align: center; font-family: 'Arial', sans-serif; color: #2c3e50; font-size: 1.6rem;">Sign In</h2>
+    
+    <label for="name" style="font-size: 1rem; color: #34495e; font-weight: bold;">Name</label>
+    <input type="text" name="name" id="name" autocomplete="name" placeholder="Enter your name here" required
+      style="width: 100%; padding: 12px; margin: 10px 0 20px 0; border: 1px solid #2980b9; border-radius: 6px; font-size: 1rem; box-sizing: border-box; background-color: transparent; color: #34495e; transition: border 0.3s ease;">
+    
+    <label for="email" style="font-size: 1rem; color: #34495e; font-weight: bold;">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email here" required
+      style="width: 100%; padding: 12px; margin: 10px 0 20px 0; border: 1px solid #2980b9; border-radius: 6px; font-size: 1rem; box-sizing: border-box; background-color: transparent; color: #34495e; transition: border 0.3s ease;">
+    
+    <label for="password" style="font-size: 1rem; color: #34495e; font-weight: bold;">Password</label>
+    <input type="password" name="password" minlength="8" id="password" placeholder="Enter your password here" required
+      style="width: 100%; padding: 12px; margin: 10px 0 20px 0; border: 1px solid #2980b9; border-radius: 6px; font-size: 1rem; box-sizing: border-box; background-color: transparent; color: #34495e; transition: border 0.3s ease;">
+    
+    <label for="number" style="font-size: 1rem; color: #34495e; font-weight: bold;">Phone Number</label>
+    <input type="number" name="number" id="number" oninput="if(this.value.length > 10) this.value = this.value.slice(0, 10);" 
+      placeholder="Enter your number here" required maxlength="10"
+      style="width: 100%; padding: 12px; margin: 10px 0 20px 0; border: 1px solid #2980b9; border-radius: 6px; font-size: 1rem; box-sizing: border-box; background-color: transparent; color: #34495e; transition: border 0.3s ease;">
+    
+    <button type="submit" id="signInComplete" style="width: 100%; padding: 14px; background-color: #16a085; border: none; border-radius: 6px; color: #fff; font-size: 1.1rem; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s;">
+      Sign In
+    </button>
+    
+    <button type="button" id="GoBack" style="width: 100%; padding: 14px; background-color: #f39c12; border: none; border-radius: 6px; color: #fff; font-size: 1.1rem; margin-top: 15px; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s;">
+      Go Back
+    </button>
+  </form>
+`;
+
+
+
+
     document.body.appendChild(formContainer);
   
     const goBackBtn = document.getElementById('GoBack');
