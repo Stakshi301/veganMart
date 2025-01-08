@@ -33,20 +33,20 @@ formContainer.innerHTML = `
     <h2 style="text-align: center; font-family: 'Arial', sans-serif; color: #2c3e50; font-size: 1.6rem;">Sign In</h2>
     
     <label for="name" style="font-size: 1rem; color: #34495e; font-weight: bold;">Name</label>
-    <input type="text" name="name" id="name" autocomplete="name" placeholder="Enter your name here" required
+    <input type="text" name="name" id="name" autocomplete="name" placeholder="Enter your name" required
       style="width: 100%; padding: 12px; margin: 10px 0 20px 0; border: 1px solid #2980b9; border-radius: 6px; font-size: 1rem; box-sizing: border-box; background-color: transparent; color: #34495e; transition: border 0.3s ease;">
     
     <label for="email" style="font-size: 1rem; color: #34495e; font-weight: bold;">Email</label>
-    <input type="email" name="email" id="email" placeholder="Enter your email here" required
+    <input type="email" name="email" id="email" placeholder="Enter your email" required
       style="width: 100%; padding: 12px; margin: 10px 0 20px 0; border: 1px solid #2980b9; border-radius: 6px; font-size: 1rem; box-sizing: border-box; background-color: transparent; color: #34495e; transition: border 0.3s ease;">
     
     <label for="password" style="font-size: 1rem; color: #34495e; font-weight: bold;">Password</label>
-    <input type="password" name="password" minlength="8" id="password" placeholder="Enter your password here" required
+    <input type="password" name="password" minlength="8" id="password" placeholder="Enter your password" required
       style="width: 100%; padding: 12px; margin: 10px 0 20px 0; border: 1px solid #2980b9; border-radius: 6px; font-size: 1rem; box-sizing: border-box; background-color: transparent; color: #34495e; transition: border 0.3s ease;">
     
     <label for="number" style="font-size: 1rem; color: #34495e; font-weight: bold;">Phone Number</label>
     <input type="number" name="number" id="number" oninput="if(this.value.length > 10) this.value = this.value.slice(0, 10);" 
-      placeholder="Enter your number here" required maxlength="10"
+      placeholder="Enter your number" required maxlength="10"
       style="width: 100%; padding: 12px; margin: 10px 0 20px 0; border: 1px solid #2980b9; border-radius: 6px; font-size: 1rem; box-sizing: border-box; background-color: transparent; color: #34495e; transition: border 0.3s ease;">
     
     <button type="submit" id="signInComplete" style="width: 100%; padding: 14px; background-color: #16a085; border: none; border-radius: 6px; color: #fff; font-size: 1.1rem; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s;">
