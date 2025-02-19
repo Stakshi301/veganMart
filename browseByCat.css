@@ -34,3 +34,37 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     padding-top: 5px;
 }
 
+
+@media (max-width:768px){
+    .navbar{
+        width: 200%;
+    }
+    .line{
+      width: 200%;
+      /* background-color: #008000; */
+    }
+.random_products_card_parent{
+    width: 200%;
+    margin: 5px auto;
+}
+.random_product{
+    width: 15%;
+}
+  }
+
+
+  /* @media (max-width:425px){
+    .search_bar{
+width: 10%;
+    }
+    .line{
+      width: 200%;
+    }
+.random_products_card_parent{
+    width: 200%;
+    margin: 5px auto;
+}
+.random_product{
+    width: 15%;
+}
+  } */

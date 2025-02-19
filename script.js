@@ -1,3 +1,34 @@
+//SEARCH FUNCTIONALITY
+// const searchArea = document.getElementById('search_area');
+// const product = document.querySelectorAll('.random_product');
+// const mainContainer = document.querySelector('.main_container');
+
+// searchArea.addEventListener('input', function () {
+//   const userQuery = searchArea.value.toLowerCase();
+//   let matchFound = false;
+
+//   // Loop through all products
+//   product.forEach(prod => {
+//     const productName = prod.querySelector('h4').textContent.toLowerCase();
+//     if (productName.includes(userQuery)) {
+//       prod.style.display = 'block';  // Show matched product
+//       matchFound = true;
+//     } else {
+//       prod.style.display = 'none';  // Hide non-matched product
+//     }
+//   });
+
+//   // Hide or show the main container
+//   if (matchFound) {
+//     mainContainer.style.display = 'none';  // Hide main content if search matches
+//   } else {
+//     mainContainer.style.display = 'block'; // Show main content if no match
+//     product.forEach(prod => prod.style.display = 'block'); // Show all products if no match found
+//   }
+// });
+
+
+
 
 
   // SIGNUP FORM CLICK EVENT
